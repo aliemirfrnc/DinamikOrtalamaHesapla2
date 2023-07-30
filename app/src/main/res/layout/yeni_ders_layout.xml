@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="185dp"
+    android:layout_marginTop="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<AutoCompleteTextView
+    android:id="@+id/autoTextViewDersAdYeni"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Ders Adı Giriniz."
+    android:minHeight="48dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Spinner
+    android:id="@+id/spnYeniDersKredi"
+    android:layout_width="180dp"
+    android:layout_height="48dp"
+    android:layout_marginEnd="3dp"
+    android:entries="@array/krediler"
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/spnYeniDersNot"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/autoTextViewDersAdYeni"
+    app:layout_constraintVertical_bias="0.100000024" />
+
+<Spinner
+    android:id="@+id/spnYeniDersNot"
+    android:layout_width="180dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="3dp"
+    android:entries="@array/tumNotlar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/spnYeniDersKredi"
+    app:layout_constraintTop_toBottomOf="@id/autoTextViewDersAdYeni"
+    app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoTextViewDersAdYeni"
+        app:layout_constraintVertical_bias="0.64" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
